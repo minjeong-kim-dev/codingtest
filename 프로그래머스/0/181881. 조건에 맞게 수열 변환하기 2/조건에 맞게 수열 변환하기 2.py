@@ -1,0 +1,17 @@
+def solution(arr):
+    count = 0
+      
+    while True:
+        new_arr = arr.copy()
+        
+        for i in range(len(arr)):
+            if arr[i] % 2 == 0 and arr[i] >= 50:
+                arr[i] //= 2
+
+            elif arr[i] % 2 == 1 and arr[i] < 50:
+                arr[i] = (arr[i] * 2) +1  
+
+        if arr == new_arr:
+            return count
+            
+        count += 1
