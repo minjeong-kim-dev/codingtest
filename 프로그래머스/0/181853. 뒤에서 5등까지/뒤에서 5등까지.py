@@ -1,7 +1,5 @@
 def solution(num_list):
-    answer = []
-    
-    answer = sorted(num_list)
-    
 
-    return answer[:5]
+    num_list = sorted(num_list)
+    
+    return num_list[:5]
