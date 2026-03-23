@@ -8,18 +8,16 @@ def solution(arr1, arr2):
             answer = -1
         else:
             answer = 1
-    
+            
     else:
-        for i in arr1:
-            total1 += i
-        for j in arr2:
-            total2 += j
+        total1 = sum(arr1)
+        total2 = sum(arr2)
         
         if total1 > total2:
             answer = 1
-        elif total1 == total2:
-            answer = 0
-        else:
+        elif total1 < total2:
             answer = -1
+        else:
+            answer = 0
     
     return answer
