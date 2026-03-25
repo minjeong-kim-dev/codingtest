@@ -1,9 +1,10 @@
 def solution(myString, pat):
-    count = 0
+    answer = 0
     n = len(pat)
     
     for i in range(len(myString)):
-        if pat == myString[i:i+n]:
-            count += 1
+        if pat in myString[i:i+n]:
+            answer += 1
+        
     
-    return count
+    return answer
