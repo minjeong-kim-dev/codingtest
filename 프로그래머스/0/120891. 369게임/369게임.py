@@ -1,9 +1,8 @@
 def solution(order):
     answer = 0
-    a = '369'
-    str_order = str(order)
+    a = ['3','6','9']
     
-    for i in str_order:
+    for i in str(order):
         if i in a:
             answer += 1
     
