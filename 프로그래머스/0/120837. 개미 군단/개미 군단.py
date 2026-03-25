@@ -1,12 +1,10 @@
 def solution(hp):
     answer = 0
-
-    answer += hp // 5
-    hp = hp % 5
+    
+    ants = [5,3,1]
+    
+    for ant in ants:
+        answer += hp // ant
+        hp %= ant
         
-    answer += hp //3 
-    hp = hp % 3
-    
-    answer += hp
-    
     return answer
