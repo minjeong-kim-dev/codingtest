@@ -1,12 +1,16 @@
 def solution(a, b):
     answer = 0
     
-    answer1 = int(str(a)+str(b))
+    str_a = str(a)
+    str_b = str(b)
     
-    if answer1 > (2*a*b):
-        answer = answer1
+    if int((str_a + str_b)) < (2 * a * b):
+        answer =  2 * a * b
+    
+    elif int((str_a + str_b)) > (2 * a * b):
+        answer =  str_a + str_b
         
-    else:
-        answer = (2*a*b)
+    elif int((str_a + str_b)) == (2 * a * b):
+        answer =  str_a + str_b
     
-    return answer
+    return int(answer)
